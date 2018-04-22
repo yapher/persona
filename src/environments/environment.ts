@@ -3,7 +3,7 @@
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 export const environment = {
-  production: "boolean",
+  production: true,
   firebase: {
       apiKey: "AIzaSyCVTd90-h2nNpXdEkvpgjKB2spB42EhHys",
       authDomain: "angular-fs-a7f49.firebaseapp.com",
