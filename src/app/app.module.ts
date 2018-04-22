@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { PersonasComponent } from './components/aplicaciones/personas/personas.component';
 import { AlertaComponent } from './components/tools/alerta/alerta.component';
+import { AlertModule } from 'ngx-bootstrap';
 
 
 
@@ -33,7 +34,9 @@ import { AlertaComponent } from './components/tools/alerta/alerta.component';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    FormsModule
+    AlertModule.forRoot(),
+    FormsModule,
+    
   ],
   providers: [
     TaskService,
