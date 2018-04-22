@@ -13,6 +13,7 @@ import { TaskService } from './services/task.service';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     TasksComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

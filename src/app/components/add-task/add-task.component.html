@@ -1,15 +1,18 @@
 <div class="card">
   <div class="card-content">
-    <span class="card-title">Add Task</span>
+    <span class="card-title">Agregar Personas</span>
     <form (ngSubmit)="onSubmit()" class="col s6">
-      <div class="row">
+      <div >
+          <i class="fas fa-address-book"></i>
         <div class="input-field col-s6">
-          <input type="text" placeholder="Add apellido" [(ngModel)]="task.apellido" name="title">
-          <label>Title</label>
+          <input type="text" placeholder="Agregar Apellido" [(ngModel)]="task.apellido" name="title">
+         
+           <label>Apellido</label>
         </div>
+        <i class="fas fa-address-book"></i>
         <div class="input-field col-s6">
-            <input type="text" placeholder="Add nombre" [(ngModel)]="task.nombre" name="description">
-            <label>Description</label>
+            <input type="text" placeholder="Agregar Nombre" [(ngModel)]="task.nombre" name="description">
+            <label>Nombre</label>
           </div>
       </div>
       <input type="submit" class="btn light-blue">

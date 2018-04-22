@@ -1,7 +1,7 @@
 <div *ngIf="tasks?.length > 0;else noTasks">
   <ul *ngFor="let task of tasks" class="collection">
     <li class="collection-item" (dblclick)="deleteTask($event, task)">
-      <strong>{{ task.apellido }}</strong> : {{ task.nombre }} 
+      <strong>{{ task.apellido }}</strong> : {{ task.nombre  }} 
       <a href="#" class="secondary-content">
         <i (click)="deleteTask($event, task)" class="fa fa-trash"></i>
         <i (click)="editTask($event, task)" class="fa fa-pencil"></i>
@@ -30,5 +30,5 @@
 </div>
 
 <ng-template #noTasks>
-  <h5>There is not Tasks yet.</h5>
+  <h5>No hay Personas Cargada el la Base de Datos.</h5>
 </ng-template>
