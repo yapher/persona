@@ -1,7 +1,7 @@
 <div *ngIf="tasks?.length > 0;else noTasks">
   <ul *ngFor="let task of tasks" class="collection">
     <li class="collection-item" (dblclick)="deleteTask($event, task)">
-      <strong>{{ task.title }}</strong> : {{ task.description }} 
+      <strong>{{ task.apellido }}</strong> : {{ task.nombre }} 
       <a href="#" class="secondary-content">
         <i (click)="deleteTask($event, task)" class="fa fa-trash"></i>
         <i (click)="editTask($event, task)" class="fa fa-pencil"></i>
@@ -12,12 +12,12 @@
             <div class="input-field col s6">
               <input 
                 type="text" name="title"
-                placeholder="Edit Title" [(ngModel)]="task.title">
+                placeholder="Edit apellido" [(ngModel)]="task.apellido">
             </div>
             <div class="input-field col s6">
                 <input 
                   type="text" name="description"
-                  placeholder="Edit Description" [(ngModel)]="task.description">
+                  placeholder="Edit nombre" [(ngModel)]="task.nombre">
             </div>
             <input type="submit" class="btn" value="Update Task">
             <button class="btn red" (click)="deleteTask($event, task)">Delete Task</button>

@@ -11,8 +11,8 @@ import { Task } from '../../models/task';
 })
 export class AddTaskComponent implements OnInit {
   task: Task = {
-   title: '',
-   description: '' 
+   apellido: '',
+   nombre: '' 
   };
   constructor(private taskService: TaskService) { }
 
@@ -20,10 +20,10 @@ export class AddTaskComponent implements OnInit {
   }
 
   onSubmit() {
-    if(this.task.title != '' && this.task.description != '') {
+    if(this.task.apellido != '' && this.task.nombre != '') {
       this.taskService.addTask(this.task);
-      this.task.title = '';
-      this.task.description = '';
+      this.task.apellido = '';
+      this.task.nombre = '';
     }
   }
 
