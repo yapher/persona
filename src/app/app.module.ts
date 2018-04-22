@@ -10,10 +10,13 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { TasksComponent } from './components/tasks/tasks.component';
 
 import { TaskService } from './services/task.service';
+import { PersonasService } from './services/personas.service';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
+import { PersonasComponent } from './components/aplicaciones/personas/personas.component';
+import { AlertaComponent } from './components/tools/alerta/alerta.component';
 
 
 
@@ -22,7 +25,9 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     TasksComponent,
     AddTaskComponent,
-    HeaderComponent
+    HeaderComponent,
+    PersonasComponent,
+    AlertaComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,8 @@ import { HeaderComponent } from './components/header/header.component';
     FormsModule
   ],
   providers: [
-    TaskService
+    TaskService,
+    PersonasService
   ],
   bootstrap: [AppComponent]
 })
