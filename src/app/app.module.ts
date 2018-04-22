@@ -18,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PersonasComponent } from './components/aplicaciones/personas/personas.component';
 import { AlertaComponent } from './components/tools/alerta/alerta.component';
 import { AlertModule } from 'ngx-bootstrap';
+import { firebase } from '../environments/firebase';
 
 
 
@@ -32,7 +33,7 @@ import { AlertModule } from 'ngx-bootstrap';
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(firebase.firebase),
     AngularFirestoreModule,
     AlertModule.forRoot(),
     FormsModule,
